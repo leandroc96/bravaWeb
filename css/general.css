@@ -7,8 +7,9 @@
         background-position-x: center;
         background-position-y: top;
         background-size: contain;
+        
         width: 100%;
-        height:  150px;
+        height:  auto;
     }
     #beneficios{
         background-image: url('../img/bg_iconos.jpg');
@@ -27,7 +28,7 @@
         background-position-y: top;
         background-size: contain;
         width: 100%;
-        height:  100px;
+        height:  auto;
     }
     .menu {
 
@@ -44,4 +45,26 @@
         z-index: 999;
         padding: 1rem 1rem;
         color: white;
+    }
+    .btnSeleccionado{
+        background-color: white;!important;
+        color: #95C11F;
+        text-decoration: none;
+    }
+    .btnNoSeleccionado{
+        background-color: #575756;!important;
+        color:black;
+    }
+    .contenedor{
+        max-width: 100% !important;
+
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .texto{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }

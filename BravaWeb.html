@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -32,21 +32,24 @@
         </ul>
     </div>
 </nav>
-<header id="header" class="container-fluid ">
+
+<header id="header" >
     <div>
-        <div class="row menu">
+        <img src="img/Logo-header.png" style="height: 167px;margin-top:0px;" >
+        <div class="container menu">
             <h5 style="color: white" class="h5nos">
                 <a href="#nosotros"  style='text-decoration:none;' class=" color-inherit"  id="nos">NOSOTROS</a>
                 |  <a style='text-decoration:none;'  id="prod">BENEFICIOS</a>
                 |  <a style='text-decoration:none;'  id="serv">SERVICIOS</a>
                 |  <a style='text-decoration:none;'  id="inter">APLICACIONES</a>
-                |  <a style='text-decoration:none;' href="#contacto"  id="cont">CONTACTO</a></h5>
+                |  <a style='text-decoration:none;' href="#contacto"  id="cont">CONTACTO</a>
+            </h5>
         </div>
     </div>
 
 </header>
-
-<div class="container" >
+<br>
+<div class="container contenedor" >
     <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -81,22 +84,27 @@
           </div> 
           
     </div>
+    </br>
     <section id="nosotros">
         <h4 align="center"><b>Nosotros</b></h4>
-        <p>Bienvenidos. Somos Brava IoT. Visionarios, profesionales, con un sólido respaldo y capaces de afrontar grandes retos. Los servicios de Brava IoT permiten a nuestros clientes potenciar el ciclo virtuoso de definir, medir, mejorar, y lograr retornos de inversión con base en la sensorización, la captura de datos, la monitorización a través de nuestra IoT (Internet de las cosas).</p>
-        
-        <p> Queremos que las empresas que trabajan con nosotros sean cada vez más competitivas y capaces de afrontar los escenarios dinámicos de hoy en día. Utilizar la tecnología IoT implica transformar la empresa tradicional, en la industria 4.0. Con Brava IoT, es estar listo hoy para los desafíos de mañana.</p>
-       
-        <p> Estamos presentes a través de nuestra plataforma IoT en los dispositivos, sensores, servicios en la nube, y datos que se generan en todo tipo de espacio ya sea desde una casa a una gran industria, desde un campo a una gran ciudad. Desarrollamos y ejecutamos soluciones para la generación de tecnologías, proyectos y servicios aplicados a la Industria 4.0, a la AgTech, FinTech, Turismo y seguridad entre otras áreas.</p>
-        
+        <div class="texto">
+            <p>Bienvenidos. Somos Brava IoT. Visionarios, profesionales, con un sólido respaldo y capaces de afrontar grandes retos. Los servicios de Brava IoT permiten a nuestros clientes potenciar el ciclo virtuoso de definir, medir, mejorar, y lograr retornos de inversión con base en la sensorización, la captura de datos, la monitorización a través de nuestra IoT (Internet de las cosas).</p>
+
+            <p> Queremos que las empresas que trabajan con nosotros sean cada vez más competitivas y capaces de afrontar los escenarios dinámicos de hoy en día. Utilizar la tecnología IoT implica transformar la empresa tradicional, en la industria 4.0. Con Brava IoT, es estar listo hoy para los desafíos de mañana.</p>
+
+            <p> Estamos presentes a través de nuestra plataforma IoT en los dispositivos, sensores, servicios en la nube, y datos que se generan en todo tipo de espacio ya sea desde una casa a una gran industria, desde un campo a una gran ciudad. Desarrollamos y ejecutamos soluciones para la generación de tecnologías, proyectos y servicios aplicados a la Industria 4.0, a la AgTech, FinTech, Turismo y seguridad entre otras áreas.</p>
+
+        </div>
+
         
     </section>
+    </br>
     <section id="beneficios" >
-        <div class="container">
+        <div>
         <div class="text-center">
             <h4 align="center"><b>Beneficios</b></h4>
         </div>
-            <div class="row align-items-center">
+            <div class="row " style="text-align: center;">
                 <div class="col">
                     <img src="img/mejora-estrategia.png">
                     <p>Mejora la extragegia del negocio</p>
@@ -126,15 +134,16 @@
 
         </div>
     </section>
+    </br>
     <section id ="servicios">
         <h4 align="center"><b>Servicios</b></h4>
         <img src="img/servicios/servicios.jpg" width="100%" alt="servicios" id="imgServicios">
         <div style="display:inline-block; width: 100%;">
-            <button id="btnSearch" style="width :33%" class="btn btn-primary btn-md center-block" onclick="cambiarDatos(1)"  >Brava integral 100% a medida</button>
-            <button id="btnSearch" style="width :33%" class="btn btn-primary btn-md center-block" onclick="cambiarDatos(2)" >Brava Fusion Co-Desarrollos</button>
-             <button id="btnSearch" style="width :33%" class="btn btn-primary btn-md center-block" onclick="cambiarDatos(3)" >Brava Plus Consultoria</button>
+            <button id="btnServicios1" style="width :33%; border-radius: 0px; outline: none;" class="btn  btn-md  btnSeleccionado" onclick="cambiarDatos(1)"  >Brava integral <br>100% a medida</button>
+            <button id="btnServicios2" style="width :33%; border-radius: 0px; outline: none; " class="btn btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(2)" >Brava Fusion <br> Co-Desarrollos</button>
+            <button id="btnServicios3" style="width :33%; border-radius: 0px; outline: none;" class="btn  btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(3)" >Brava Plus <br> Consultoria</button>
         </div>
-        <div>
+        <div class="texto">
         <p>
             Desplegamos sensores, monitorizamos datos, explotamos el big data y creamos inteligencia para tu empre-
             sa de manera integral. Ayudamos a manejar cualquier medición en todas las magnitudes con una única y
@@ -149,6 +158,7 @@
         </p>
     </div>
     </section>
+    </br>
     <section id="aplicaciones">
         <h4 align="center"><b>Campos de aplicacion</b></h4>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -183,6 +193,7 @@
             </a>
           </div>
     </section>
+    </br>
     <section id="contacto" class="contacto">
         <div class="container-fluid">
             <div class="row">
@@ -247,14 +258,41 @@
             if(orden==1){
                 $("#imgServicios").attr("src","img/servicios/servicios.jpg");
 
+                $("#btnServicios1").removeClass("btnNoSeleccionado");
+                $("#btnServicios1").addClass("btnSeleccionado");
+
+                $("#btnServicios2").removeClass("btnSeleccionado");
+                $("#btnServicios3").removeClass("btnSeleccionado");
+
+                $("#btnServicios2").addClass("btnNoSeleccionado");
+                $("#btnServicios3").addClass("btnNoSeleccionado");
+
             }
             if(orden==2){
                 $("#imgServicios").attr("src","img/servicios/servicios2.jpg");
+
+                $("#btnServicios2").removeClass("btnNoSeleccionado");
+                $("#btnServicios2").addClass("btnSeleccionado");
+
+                $("#btnServicios1").removeClass("btnSeleccionado");
+                $("#btnServicios3").removeClass("btnSeleccionado");
+
+                $("#btnServicios1").addClass("btnNoSeleccionado");
+                $("#btnServicios3").addClass("btnNoSeleccionado");
+
 
             }
             if(orden==3){
                 $("#imgServicios").attr("src","img/servicios/servicios3.jpg");
 
+                $("#btnServicios3").removeClass("btnNoSeleccionado");
+                $("#btnServicios3").addClass("btnSeleccionado");
+
+                $("#btnServicios1").removeClass("btnSeleccionado");
+                $("#btnServicios2").removeClass("btnSeleccionado");
+
+                $("#btnServicios1").addClass("btnNoSeleccionado");
+                $("#btnServicios2").addClass("btnNoSeleccionado");
             }
         }
 </script>
