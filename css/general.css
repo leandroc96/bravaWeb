@@ -1,0 +1,47 @@
+
+    #header{
+
+        background-image: url('../img/bg_header.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: contain;
+        width: 100%;
+        height:  150px;
+    }
+    #beneficios{
+        background-image: url('../img/bg_iconos.jpg');
+        background-position: top;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+    }
+    #footer{
+        background-image: url('../img/footer.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: contain;
+        width: 100%;
+        height:  100px;
+    }
+    .menu {
+
+        position: absolute;
+        top: 80px;
+        left: 550px;
+
+    }
+    #menuMobile {
+        display: none;
+        background-repeat: repeat;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        padding: 1rem 1rem;
+        color: white;
+    }
