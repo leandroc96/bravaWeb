@@ -24,13 +24,14 @@
     }
     #footer{
         background-image: url('../img/footer.jpg');
+        
         background-repeat: no-repeat;
         background-position: top;
         background-position-x: center;
-        background-position-y: top;
-        background-size: contain;
+        background-position-y: -18px;
+        
         width: 100%;
-        height:  auto;
+        height:  80px;
     }
     .menu {
         display: none;
