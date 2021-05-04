@@ -1,4 +1,6 @@
-
+    body{
+        font-family: Lato-Regular;
+    }
     #header{
 
         background-image: url('../img/bg_header.png');
@@ -6,7 +8,7 @@
         background-position: top;
         background-position-x: center;
         background-position-y: top;
-        background-size: contain;
+        
         
         width: 100%;
         height:  auto;
@@ -31,10 +33,10 @@
         height:  auto;
     }
     .menu {
-
+        display: none;
         position: absolute;
-        top: 80px;
-        left: 550px;
+        top: 100px;
+        left: 510px;
 
     }
     #menuMobile {
@@ -47,12 +49,12 @@
         color: white;
     }
     .btnSeleccionado{
-        background-color: white;!important;
+        background-color: white !important;
         color: #95C11F;
         text-decoration: none;
     }
     .btnNoSeleccionado{
-        background-color: #575756;!important;
+        background-color: #575756 !important;
         color:black;
     }
     .contenedor{
@@ -67,4 +69,58 @@
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .h5nos{
+        margin-bottom: 0;
+        font-size: 1.063rem;
+    }
+    #menuMobile {
+        display: none;
+        background-repeat: repeat;
+        background-color: #575756;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        padding: 1rem 1rem;
+        color: white;
+    }
+    .burger {
+        position: absolute;
+         top: 1%;
+         right: 2%;
+        color: white;
+        border: 1px solid white;
+         display: block;
+         z-index: 998;
+    }
+    @media (min-width:768px) {
+        .burger {
+            display: none;
+        }
+        .menu {
+            display: block;
+        }
+    }
+    
+
+    .navbar-toggler{
+        padding-top: 41px !important;
+    }        
+        
+
+    .indicadorCarrousel{
+        width: 20px !important;
+        height: 20px  !important;
+        border-radius: 100% !important;
+        border-color: #575756 !important;
+        border-width: 2px !important;
+        border: solid;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        bottom: -50px !important;
+        
+    }
+    .active{
+        background-color: #95C11F !important;
     }

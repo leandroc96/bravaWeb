@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,38 +12,41 @@
 </head>
 
 <body>
-<nav class="col-9" id="menuMobile">
+<nav class="col-9" id="menuMobile" style="display: none;">
     <div class="navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item py-2 border-bottom">
-                <a class="nav-link color-inherit" href="nosotros.html" id="nosM">NOSOTROS</a>
+                <a class="nav-link color-inherit" id="nosMob">NOSOTROS</a>
             </li>
             <li class="nav-item py-2 border-bottom">
-                <a class="nav-link" id="prodM">BENEFICIOS</a>
+                <a class="nav-link" id="benMob" >BENEFICIOS</a>
             </li>
             <li class="nav-item py-2 border-bottom">
-                <a class="nav-link" id="servM">SERVICIOS</a>
+                <a class="nav-link" id="serMob">SERVICIOS</a>
             </li>
             <li class="nav-item py-2 border-bottom">
-                <a class="nav-link" id="interM">APLICACIONES</a>
+                <a class="nav-link"  id="appMob">APLICACIONES</a>
             </li>
             <li class="nav-item py-2 border-bottom">
-                <a class="nav-link" id="contM">CONTACTO</a>
+                <a class="nav-link" id="contMob" >CONTACTO</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <header id="header" >
+    <button class="burger navbar-toggler" type="button"> 
+        <i class="fa fa-bars"></i>
+    </button>
     <div>
-        <img src="img/Logo-header.png" style="height: 167px;margin-top:0px;" >
-        <div class="container menu">
+        <img src="img/Logo-header.png" style="height: 150px;margin-top:0px;" >
+        <div class=" menu">
             <h5 style="color: white" class="h5nos">
-                <a href="#nosotros"  style='text-decoration:none;' class=" color-inherit"  id="nos">NOSOTROS</a>
-                |  <a style='text-decoration:none;'  id="prod">BENEFICIOS</a>
-                |  <a style='text-decoration:none;'  id="serv">SERVICIOS</a>
-                |  <a style='text-decoration:none;'  id="inter">APLICACIONES</a>
-                |  <a style='text-decoration:none;' href="#contacto"  id="cont">CONTACTO</a>
+                <a style='text-decoration:none; color: white;'  id="nosM">NOSOTROS</a>
+                |  <a style='text-decoration:none; color: white;' class=" nav-item" id="benM">BENEFICIOS</a>
+                |  <a style='text-decoration:none; color: white;' class="nav-item" id="serM">SERVICIOS</a>
+                |  <a style='text-decoration:none; color: white;' class=" nav-item" id="appM">APLICACIONES</a>
+                |  <a style='text-decoration:none; color: white;' class="nav-item" id="contM">CONTACTO</a>
             </h5>
         </div>
     </div>
@@ -53,10 +57,10 @@
     <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicadorCarrousel"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicadorCarrousel"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicadorCarrousel"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" class="indicadorCarrousel" ></li>
               </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -84,7 +88,7 @@
           </div> 
           
     </div>
-    </br>
+    </br></br>
     <section id="nosotros">
         <h4 align="center"><b>Nosotros</b></h4>
         <div class="texto">
@@ -98,7 +102,7 @@
 
         
     </section>
-    </br>
+    </br></br>
     <section id="beneficios" >
         <div>
         <div class="text-center">
@@ -134,14 +138,14 @@
 
         </div>
     </section>
-    </br>
+    </br></br>
     <section id ="servicios">
         <h4 align="center"><b>Servicios</b></h4>
         <img src="img/servicios/servicios.jpg" width="100%" alt="servicios" id="imgServicios">
         <div style="display:inline-block; width: 100%;">
-            <button id="btnServicios1" style="width :33%; border-radius: 0px; outline: none;" class="btn  btn-md  btnSeleccionado" onclick="cambiarDatos(1)"  >Brava integral <br>100% a medida</button>
-            <button id="btnServicios2" style="width :33%; border-radius: 0px; outline: none; " class="btn btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(2)" >Brava Fusion <br> Co-Desarrollos</button>
-            <button id="btnServicios3" style="width :33%; border-radius: 0px; outline: none;" class="btn  btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(3)" >Brava Plus <br> Consultoria</button>
+            <button id="btnServicios1" style="width :32%; border-radius: 0px; outline: none;" class="btn  btn-md  btnSeleccionado" onclick="cambiarDatos(1)"  >Brava integral <br>100% a medida</button>
+            <button id="btnServicios2" style="width :32%; border-radius: 0px; outline: none; " class="btn btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(2)" >Brava Fusion <br> Co-Desarrollos</button>
+            <button id="btnServicios3" style="width :32%; border-radius: 0px; outline: none;" class="btn  btn-md center-block btnNoSeleccionado" onclick="cambiarDatos(3)" >Brava Plus <br> Consultoria</button>
         </div>
         <div class="texto">
         <p>
@@ -158,7 +162,7 @@
         </p>
     </div>
     </section>
-    </br>
+    </br></br>
     <section id="aplicaciones">
         <h4 align="center"><b>Campos de aplicacion</b></h4>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -236,7 +240,7 @@
                             </div>
                         </div>
                         <div class="col-12 text-center text-md-left">
-                            <button class="btn btn-block rounded-pill px-5" type="submit">Enviar Consulta </button>
+                            <button style=" background-color: #95C11F;color: white;" class="btn btn-block rounded-pill px-5" type="submit">Enviar Consulta </button>
                         </div>
                     </form>
                 </div>
@@ -250,9 +254,9 @@
     
 </footer>
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/contacto.js"></script>
 <script>
     function cambiarDatos(orden){
             if(orden==1){
@@ -295,6 +299,88 @@
                 $("#btnServicios2").addClass("btnNoSeleccionado");
             }
         }
+
+        $(document).ready(function(){
+	   		// scroll desde pc o pantalla grande
+    		$("#nosM").click(function() {
+    			$("#menuMobile").css('display', 'none');
+    		    $('html,body').animate({
+    		        scrollTop: $("#nosotros").offset().top},
+    		        'slow');
+    		});
+    		$("#benM").click(function() {
+                
+    		    $('html,body').animate({
+    		        scrollTop: $("#beneficios").offset().top},
+    		        'slow');
+    		});
+    		$("#serM").click(function() {
+    		    $('html,body').animate({
+    		        scrollTop: $("#servicios").offset().top},
+    		        'slow');
+    		});
+    		$("#appM").click(function() {
+                console.log("yendo a aplicaiones")
+    		    $('html,body').animate({
+    		        scrollTop: $("#aplicaciones").offset().top},
+    		        'slow');
+    		});
+    		$("#contM").click(function() {
+    		    $('html,body').animate({
+    		        scrollTop: $(".contacto").offset().top},
+    		        'slow');
+    		});
+    		
+    		// SCROLEO AL CLICKEAR EL MENU EN PANTALLA CEL (-768px)
+    		// CIERRA EL MENU HAMBURGUESA
+    		$("#nosMob").click(function() {
+    		    $('html,body').animate({
+    		        scrollTop: $("#nosotros").offset().top},
+    		        'slow');
+    		});
+    		$("#benMob").click(function() {
+    			$("#menuMobile").css('display', 'none');
+    		    $('html,body').animate({
+    		        scrollTop: $("#beneficios").offset().top},
+    		        'slow');
+    		});
+    		
+    		$("#serMob").click(function() {
+    			$("#menuMobile").css('display', 'none');
+    		    $('html,body').animate({
+    		        scrollTop: $("#servicios").offset().top},
+    		        'slow');
+    		});
+    		
+    		$("#appMob").click(function() {
+    			$("#menuMobile").css('display', 'none');
+    		    $('html,body').animate({
+    		        scrollTop: $("#aplicaciones").offset().top},
+    		        'slow');
+    		});
+    		
+    		$("#contMob").click(function() {
+    			$("#menuMobile").css('display', 'none');
+    		    $('html,body').animate({
+    		        scrollTop: $("#contacto").offset().top},
+    		        'slow');
+    		});
+    		
+    	
+    		$(".burger").click(function(){
+    			$("#menuMobile").animate({width:'toggle'},350);
+    		});
+        })
+
+        // Cierre del menu hamburguesa al clickear afuera
+		$(document).mouseup(e => {
+			if (!$('#menuMobile').is(e.target) // if the target of the click isn't the container...
+					&& $('#menuMobile').has(e.target).length === 0 // ... nor a descendant of the container
+					&& $('#menuMobile').css('display') != 'none' ) // and inst hide 
+			{
+				$("#menuMobile").animate({width:'toggle'},350);
+		}
+		});
 </script>
 </body>
 </html>
