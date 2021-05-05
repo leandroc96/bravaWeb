@@ -36,18 +36,18 @@
 </nav>
 
 <header id="header" >
-    <button class="burger navbar-toggler" type="button"> 
+    <button class="burger navbar-toggler" type="button">
         <i class="fa fa-bars"></i>
     </button>
     <div>
         <img src="img/Logo-header.png" style="height: 150px;margin-top:0px;" >
         <div class=" menu">
             <h5 style="color: white" class="h5nos">
-                <a style='text-decoration:none; color: white;'  id="nosM">NOSOTROS</a>
-                |  <a style='text-decoration:none; color: white;' class=" nav-item" id="benM">BENEFICIOS</a>
-                |  <a style='text-decoration:none; color: white;' class="nav-item" id="serM">SERVICIOS</a>
-                |  <a style='text-decoration:none; color: white;' class=" nav-item" id="appM">APLICACIONES</a>
-                |  <a style='text-decoration:none; color: white;' class="nav-item" id="contM">CONTACTO</a>
+                <a style='cursor: pointer; color: white;'  id="nosM">NOSOTROS</a>
+                |  <a style='cursor: pointer;color: white;' class=" nav-item" id="benM">BENEFICIOS</a>
+                |  <a style='cursor: pointer;color: white;' class="nav-item" id="serM">SERVICIOS</a>
+                |  <a style='cursor: pointer;color: white;' class=" nav-item" id="appM">APLICACIONES</a>
+                |  <a style='cursor: pointer; color: white;' class="nav-item" id="contM">CONTACTO</a>
             </h5>
         </div>
     </div>
@@ -255,13 +255,19 @@
     
 </footer>
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <script src="js/jquery-3.4.1.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/contacto.js"></script>
 <script>
     function cambiarDatos(orden){
             if(orden==1){
-                $("#imgServicios").attr("src","img/servicios/servicios.jpg");
+                $("#imgServicios").fadeOut(300, function (){
+                    $("#imgServicios").attr("src","img/servicios/servicios.jpg");
+                }).fadeIn(300);
+
 
                 $("#btnServicios1").removeClass("btnNoSeleccionado");
                 $("#btnServicios1").addClass("btnSeleccionado");
@@ -274,7 +280,9 @@
 
             }
             if(orden==2){
-                $("#imgServicios").attr("src","img/servicios/servicios2.jpg");
+                $("#imgServicios").fadeOut(300, function (){
+                    $("#imgServicios").attr("src","img/servicios/servicios2.jpg");
+                }).fadeIn(300);
 
                 $("#btnServicios2").removeClass("btnNoSeleccionado");
                 $("#btnServicios2").addClass("btnSeleccionado");
@@ -288,7 +296,9 @@
 
             }
             if(orden==3){
-                $("#imgServicios").attr("src","img/servicios/servicios3.jpg");
+                $("#imgServicios").fadeOut(300, function (){
+                    $("#imgServicios").attr("src","img/servicios/servicios3.jpg");
+                }).fadeIn(300);
 
                 $("#btnServicios3").removeClass("btnNoSeleccionado");
                 $("#btnServicios3").addClass("btnSeleccionado");
@@ -302,15 +312,15 @@
         }
 
         $(document).ready(function(){
+
 	   		// scroll desde pc o pantalla grande
     		$("#nosM").click(function() {
-    			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#nosotros").offset().top},
     		        'slow');
     		});
     		$("#benM").click(function() {
-                
+
     		    $('html,body').animate({
     		        scrollTop: $("#beneficios").offset().top},
     		        'slow');
@@ -331,10 +341,11 @@
     		        scrollTop: $(".contacto").offset().top},
     		        'slow');
     		});
-    		
+
     		// SCROLEO AL CLICKEAR EL MENU EN PANTALLA CEL (-768px)
     		// CIERRA EL MENU HAMBURGUESA
     		$("#nosMob").click(function() {
+                $("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#nosotros").offset().top},
     		        'slow');
@@ -345,41 +356,47 @@
     		        scrollTop: $("#beneficios").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#serMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#servicios").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#appMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#aplicaciones").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#contMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#contacto").offset().top},
     		        'slow');
     		});
-    		
-    	
+
+
     		$(".burger").click(function(){
+
     			$("#menuMobile").animate({width:'toggle'},350);
+
     		});
+
+
+
         })
 
         // Cierre del menu hamburguesa al clickear afuera
 		$(document).mouseup(e => {
 			if (!$('#menuMobile').is(e.target) // if the target of the click isn't the container...
 					&& $('#menuMobile').has(e.target).length === 0 // ... nor a descendant of the container
-					&& $('#menuMobile').css('display') != 'none' ) // and inst hide 
+					&& $('#menuMobile').css('display') != 'none' ) // and inst hide
 			{
 				$("#menuMobile").animate({width:'toggle'},350);
+
 		}
 		});
 </script>
