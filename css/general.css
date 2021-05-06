@@ -122,8 +122,24 @@
             display: block;
         }
     }
+    @media (max-width:768px) {
+        .slider{
+            width: 100% !important;
+            display: block!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
     
-
+        .img-header{
+            height: 100px !important;
+            margin-top:15px !important;
+        }
+    }
+    
+    .img-header{
+        height: 150px;
+        margin-top:-10px;
+    }
     .navbar-toggler{
         padding-top: 41px !important;
     }        
