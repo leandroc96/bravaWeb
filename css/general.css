@@ -7,6 +7,18 @@
     a{
         cursor: pointer !important;
     }
+    .slider{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .centrado{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #header{
 
         background-image: url('../img/bg_header.png');
@@ -14,10 +26,8 @@
         background-position: top;
         background-position-x: center;
         background-position-y: top;
-        
-        
         width: 100%;
-        height:  auto;
+        height:  130px;
     }
     #beneficios{
         background-image: url('../img/bg_iconos.jpg');
@@ -25,7 +35,7 @@
         background-position-x: center;
         background-position-y: top;
         background-size: contain;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     #footer{
@@ -42,8 +52,8 @@
     .menu {
         display: none;
         position: absolute;
-        top: 100px;
-        left: 510px;
+        top: 48px;
+        left: 530px;
 
     }
     #menuMobile {
@@ -65,13 +75,15 @@
         color:black;
     }
     .contenedor{
-        max-width: 100% !important;
-
+        max-width: 95% !important;
+        margin-top: -20px;
+        
         margin-right: auto;
         margin-left: auto;
 
     }
     .texto{
+        width: 90%;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
@@ -102,6 +114,7 @@
          z-index: 998;
     }
     @media (min-width:768px) {
+        
         .burger {
             display: none;
         }
