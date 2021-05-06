@@ -111,28 +111,28 @@
             <h4 align="center"><b>Beneficios</b></h4>
         </div>
             <div class="row " style="text-align: center;">
-                <div class="col">
-                    <img src="img/mejora-estrategia.png" style="width: 100px;">
+                <div class="col-6 col-md-4">
+                    <img src="img/mejora-estrategia.png" style="width: 100px;" >
                     <p>Mejora la extragegia del negocio</p>
                 </div>
-                <div class="col">
-                    <img src="img/rapido-retorno-inversion.png" style="width: 100px;">
+                <div class="col-6 col-md-4 ">
+                    <img src="img/rapido-retorno-inversion.png" style="width: 100px;" >
                     <p>Rapido retorno de inversión</p>
                 </div>
-                <div class="col">
-                    <img src="img/Aumento-productividad.png" style="width: 100px;">
+                <div class="col-6 col-md-4 ">
+                    <img src="img/Aumento-productividad.png" style="width: 100px;" >
                     <p>Aumento de la productividad</p>
                 </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img src="img/mayores-posibilidades.png" style="width: 100px;">
+               
+                <div class="col-6 col-md-4 ">
+                    <img src="img/mayores-posibilidades.png" style="width: 100px;" >
                     <p>Mayores posibilidades de negocios</p>
                 </div>
-                <div class="col">
-                    <img src="img/costos.png" style="width: 100px;">
+                <div class="col-6 col-md-4 ">
+                    <img src="img/costos.png" style="width: 100px;" >
                     <p>Reduccion de costos</p>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-4 ">
                     <img src="img/mejora-de-servicio.png" style="width: 100px;">
                     <p>Mejora de servicio al cliente</p>
                 </div>
@@ -263,9 +263,9 @@
  <script src="js/jquery-3.4.1.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/contacto.js"></script>
-<script>
+ <script>
     function cambiarDatos(orden){
-        if(orden==1){
+            if(orden==1){
                 $("#imgServicios").fadeOut(300, function (){
                     $("#imgServicios").attr("src","img/servicios/servicios.jpg");
                 }).fadeIn(300);
@@ -311,19 +311,18 @@
                 $("#btnServicios1").addClass("btnNoSeleccionado");
                 $("#btnServicios2").addClass("btnNoSeleccionado");
             }
-        
         }
 
         $(document).ready(function(){
+
 	   		// scroll desde pc o pantalla grande
     		$("#nosM").click(function() {
-    			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#nosotros").offset().top},
     		        'slow');
     		});
     		$("#benM").click(function() {
-                
+
     		    $('html,body').animate({
     		        scrollTop: $("#beneficios").offset().top},
     		        'slow');
@@ -344,10 +343,11 @@
     		        scrollTop: $(".contacto").offset().top},
     		        'slow');
     		});
-    		
+
     		// SCROLEO AL CLICKEAR EL MENU EN PANTALLA CEL (-768px)
     		// CIERRA EL MENU HAMBURGUESA
     		$("#nosMob").click(function() {
+                $("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#nosotros").offset().top},
     		        'slow');
@@ -358,41 +358,47 @@
     		        scrollTop: $("#beneficios").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#serMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#servicios").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#appMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#aplicaciones").offset().top},
     		        'slow');
     		});
-    		
+
     		$("#contMob").click(function() {
     			$("#menuMobile").css('display', 'none');
     		    $('html,body').animate({
     		        scrollTop: $("#contacto").offset().top},
     		        'slow');
     		});
-    		
-    	
+
+
     		$(".burger").click(function(){
+
     			$("#menuMobile").animate({width:'toggle'},350);
+
     		});
+
+
+
         })
 
         // Cierre del menu hamburguesa al clickear afuera
 		$(document).mouseup(e => {
 			if (!$('#menuMobile').is(e.target) // if the target of the click isn't the container...
 					&& $('#menuMobile').has(e.target).length === 0 // ... nor a descendant of the container
-					&& $('#menuMobile').css('display') != 'none' ) // and inst hide 
+					&& $('#menuMobile').css('display') != 'none' ) // and inst hide
 			{
 				$("#menuMobile").animate({width:'toggle'},350);
+
 		}
 		});
 </script>
