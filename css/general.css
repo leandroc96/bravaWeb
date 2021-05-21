@@ -1,3 +1,8 @@
+    :root{
+        --colorSomosBrava: #4cd0d0;
+        --colorVisionarios: #10e905;
+        --colorConocenos: #dbf35d
+    }
     body{
         font-family: Lato-Regular;
     }
@@ -7,20 +12,103 @@
     a{
         cursor: pointer !important;
     }
-    .slider{
+    /*.slider{
         width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
 
-    }
+    }*/
     .centrado{
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    #header{
 
+    /*Nosotros*/
+    #nosotros{
+        background-color: #6c757d;
+        background-image: url("../img/nosotros/home-quienes-somos.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+    #nosotros .row{
+        height: 100%;
+    }
+    #nosotros h1{
+        font-size: 3.5rem;
+    }
+    #nosotros h2{
+        font-size: 3rem;
+    }
+    #nosotros .conocenos{
+        color: var(--colorConocenos);
+        text-align: right;
+        margin-bottom: 0;
+    }
+    #nosotros .brava{
+        color: var(--colorSomosBrava);
+        margin-bottom: 0;
+    }
+    #nosotros .visionarios{
+        color: var(--colorVisionarios);
+    }
+
+    #nosotros .container-fluid{
+        padding: 1% 10%;
+        height: 100%;
+    }
+    #nosotros .title a:hover{
+        text-decoration: none !important;
+    }
+    .title{
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    .seccion{
+        margin-top: 4rem;
+    }
+    #aplicaciones img{
+        width: 100%;
+    }
+    #aplicaciones .col-aplicaciones{
+        padding: 0.3rem;
+    }
+    #servicios .card .card-body{
+        padding: 0;
+        text-align: center;
+    }
+    #servicios .card-title {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        color: white;
+    }
+    #servicios .btn.btn-secondary{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-weight: bold;
+    }
+    #servicios .btn.btn-secondary:hover{
+        color: #6c757d;
+        background-color: #fff;
+        border-color: #6c757d;
+        text-decoration: none!important;
+    }
+    #servicios .card-integral{
+        background-color: #0b63eb;
+    }
+    #servicios .card-fusion{
+        background-color: #b40bb4;
+    }
+    #servicios .card-plus{
+        background-color: #fbbb04;
+    }
+
+    #header{
         background-image: url('../img/bg_header.png');
         background-repeat: no-repeat;
         background-position: top;
@@ -40,11 +128,11 @@
     }
     #footer{
         background-image: url('../img/footer.jpg');
-        background-repeat: no-repeat;
+        /*background-repeat: no-repeat;*/
         background-position: top;
-        background-position-x: -265px;
+        *background-position-x: -265px;
         background-position-y: -18px;
-        background-size: auto;
+        background-size: cover;
         width: 100%;
         height:  80px;
     }
@@ -80,14 +168,25 @@
         background-color: #575756 !important;
         color:black;
     }
-    .contenedor{
+    /*.contenedor{
         max-width: 95% !important;
         margin-top: -20px;
         
         margin-right: auto;
         margin-left: auto;
 
+    }*/
+    #container-brava {
+        padding-left: 0;
+        padding-right: 0;
     }
+    #container-brava .carousel-indicators {
+        bottom: 4rem;
+    }
+    #container-brava .carousel-control-next,  #container-brava .carousel-control-prev{
+        width: 5%;
+    }
+
     .texto{
         width: 90%;
         padding-right: 15px;
@@ -119,8 +218,37 @@
          display: block;
          z-index: 998;
     }
-    @media (min-width:768px) {
+
+    .btnServicio{
+        width :32%; border-radius: 0px; outline: none;
+    }
+    .img-header{
+        height: 150px;
+        margin-top:-10px;
+    }
+    .navbar-toggler{
+        padding-top: 41px !important;
+    }        
         
+
+    #container-brava .indicadorCarrousel{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border-color: #575756;
+        border-width: 2px;
+        border: solid;
+        margin-right: 10px;
+        margin-left: 10px;
+        bottom: -50px;
+        
+    }
+    .active{
+        background-color: #95C11F !important;
+    }
+
+    @media (min-width:768px) {
+
         .burger {
             display: none;
         }
@@ -137,16 +265,16 @@
             background-position-x: -215px  !important;
             background-position-y: -20px !important;
         }
-        .slider{
+        /*.slider{
             width: 100% !important;
             display: block!important;
             margin-left: auto!important;
             margin-right: auto!important;
-        }
+        }*/
         .imgBeneficios{
             width: 50px !important    ;
         }
-    
+
         .img-header{
             height: 90px    !important;
             margin-top:3px  !important
@@ -155,32 +283,37 @@
             width :32%; border-radius: 0px; outline: none;
             height: 110px !important;
         }
-    }
-    
-    .btnServicio{
-        width :32%; border-radius: 0px; outline: none;
-    }
-    .img-header{
-        height: 150px;
-        margin-top:-10px;
-    }
-    .navbar-toggler{
-        padding-top: 41px !important;
-    }        
-        
-
-    .indicadorCarrousel{
-        width: 20px !important;
-        height: 20px  !important;
-        border-radius: 100% !important;
-        border-color: #575756 !important;
-        border-width: 2px !important;
-        border: solid;
-        margin-right: 10px !important;
-        margin-left: 10px !important;
-        bottom: -50px !important;
-        
-    }
-    .active{
-        background-color: #95C11F !important;
+        #nosotros {
+            height: 22vh;
+            margin-top: 1rem;
+        }
+        .title {
+            font-size: 1.5rem;
+        }
+        #nosotros h1 {
+            font-size: 2rem;
+        }
+        #nosotros h2 {
+            font-size: 1.5rem;
+        }
+        #nosotros .container-fluid {
+            padding: 2% 5%;
+        }
+        #servicios .carousel-indicators {
+            bottom: 1rem;
+        }
+        #servicios .card-title {
+            margin-top: 5rem;
+        }
+        #container-brava #servicios .indicadorCarrousel{
+            width: 20px;
+            height: 5px;
+            border-radius: 0;
+            border-color: transparent;
+            border-width: 0;
+            border: none;
+        }
+        #container-brava #servicios .carousel-indicators li{
+            background-color: #6c757d;
+        }
     }
