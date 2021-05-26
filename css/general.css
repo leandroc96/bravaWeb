@@ -250,6 +250,34 @@
         background-color: grey !important;
         border: none !important;
     }
+    .seccion-aplicaciones{
+        position: relative;
+        height: 100%;
+    }
+    .img-seccion{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .text-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        background-color: #6c757d;
+        color:white;
+        width: 100%;
+        height: 100%;
+    }
+    .hidden{
+        display: none;
+    }
+    #aplicaciones .row{
+        height: 18rem;
+    }
+
+
 
     @media (min-width:768px) {
 
@@ -304,7 +332,7 @@
             padding: 2% 5%;
         }
         #servicios .carousel-indicators {
-            bottom: 1rem;
+            bottom: 7rem;
         }
         #servicios .card-title {
             margin-top: 5rem;
@@ -325,5 +353,13 @@
             height: 10px;
             bottom: -78px;
         }
+        #aplicaciones .row {
+            height: 11rem;
+        }
 
+    }
+    @media (max-width:576px){
+        #aplicaciones .row {
+            height: 48rem;
+        }
     }
