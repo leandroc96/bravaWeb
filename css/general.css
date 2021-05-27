@@ -6,9 +6,9 @@
     body{
         font-family: Lato-Regular;
     }
-    a:hover{
+    /*a:hover{
         text-decoration: underline !important;
-    }
+    }*/
     a{
         cursor: pointer !important;
     }
@@ -42,17 +42,17 @@
     #nosotros h2{
         font-size: 3rem;
     }
-    #nosotros .conocenos{
+    #nosotros .conocenos a{
         color: var(--colorConocenos);
         text-align: right;
         margin-bottom: 0;
     }
-    #nosotros .brava{
-        color: var(--colorSomosBrava);
+    #nosotros .brava a {
+        color: var(--colorSomosBrava) !important;
         margin-bottom: 0;
     }
-    #nosotros .visionarios{
-        color: var(--colorVisionarios);
+    #nosotros .visionarios a{
+        color: var(--colorVisionarios)!important;
     }
 
     #nosotros .container-fluid{
@@ -127,6 +127,7 @@
         height: auto;
     }
     #footer{
+        margin-top: 2rem;
         background-image: url('../img/footer.jpg');
         /*background-repeat: no-repeat;*/
         background-position: top;
@@ -164,10 +165,10 @@
         color: #95C11F;
         text-decoration: none;
     }
-    .btnNoSeleccionado{
+    /*.btnNoSeleccionado{
         background-color: #575756 !important;
         color:black;
-    }
+    }*/
     /*.contenedor{
         max-width: 95% !important;
         margin-top: -20px;
@@ -246,10 +247,10 @@
         background-color: transparent;
         border-color: grey;
     }
-    .active{
+    /*.active{
         background-color: grey !important;
         border: none !important;
-    }
+    }*/
     .seccion-aplicaciones{
         position: relative;
         height: 100%;
@@ -275,6 +276,45 @@
     }
     #aplicaciones .row{
         height: 18rem;
+    }
+
+    #container-brava-1{
+        padding-right: 0;
+        padding-left: 0;
+        /*height: 70vh;*/
+    }
+    #container-brava-1 .row{
+        margin-top: 3rem;
+    }
+    .tab-content{
+        background: no-repeat padding-box #fff;
+        -webkit-box-shadow: 0 14px 30px #00000029;
+        box-shadow: 0 14px 30px #00000029;
+        border-radius: 5px;
+        padding: 2rem 3.5rem;
+    }
+    #beneficioss .col-ben{
+        margin: 1rem 0rem 2rem;
+    }
+    #container-brava-1 .nav-tabs .nav-item.show .nav-link,#container-brava-1  .nav-tabs .nav-link.active {
+        color: white;
+        background-color: var(--colorSomosBrava);
+        font-weight: bold;
+    }
+    #container-brava-1 .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+
+    #container-brava-1 .nav-link {
+        display: block;
+        padding: .5rem 1rem;
+    }
+    #container-brava-1 .nav-tabs {
+        border-bottom: none;
     }
 
 
@@ -361,5 +401,21 @@
     @media (max-width:576px){
         #aplicaciones .row {
             height: 48rem;
+        }
+
+        #container-brava-1 .nav-tabs .nav-item.show .nav-link,#container-brava-1  .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+        #container-brava-1 .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+
+        #container-brava-1 .nav-link {
+            display: block;
+            padding: .5rem 1rem;
         }
     }
